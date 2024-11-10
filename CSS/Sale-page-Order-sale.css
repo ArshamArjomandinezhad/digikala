@@ -1,0 +1,190 @@
+.Order-Sale {
+    width: 100%;
+    height: 465px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .Order-Sale-center {
+        width: 99%;
+        height: inherit;
+        border: 1px solid #F0F0F1;
+        border-radius: 15px;
+        .Order-Sale-top {
+            width: 100%;
+            height: 65px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            padding-right: 15px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            p {
+                font-family: var(--fontFamily);
+                font-weight: bold;
+                color: black;
+                padding-right: 6px;
+            }
+        }
+        .Order-Sale-divider {
+            width: 85px;
+            height: 1px;
+            background-color: #D32F2F;
+            margin-right: 25px;
+        }
+        .Order-Sale-bottom {
+            width: 100%;
+            height: calc(465px - 66px);
+            .swiper {
+                width: 100%;
+                height: 95%;
+              }
+          
+              .swiper-slide {
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                padding: 10px;
+                border-left: 1px solid #F0F0F1;
+                box-sizing: border-box;
+                .order-item {
+                    width: 100%;
+                    padding-top: 15px;
+                    height: 100%;
+                    img {
+                        width: 123px;
+                        height: 14px;
+                    }
+                    .Order-product {
+                        width: 150px;
+                        height: 150px;
+                        margin-top: 10px;
+                    }
+                    .Order-Description {
+                        font-family: var(--fontFamily);
+                        color: black;
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                    .Order-distribution {
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        column-gap: 5px;
+                        padding-top: 5px;
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                        p {
+                            font-family: var(--fontFamily);
+                            font-size: 9px;
+                            color: grey;
+                        }
+                    }
+                    .Order-amountleft {
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        column-gap: 5px;
+                        padding-top: 5px;
+                        p {
+                        color: #D32F2F;
+                        font-size: 10px;
+                        font-family: var(--fontFamily);
+                    }
+                    }
+                    .Order-Deliver-tomorrow {
+                        display: flex;
+                        flex-flow: row wrap;
+                        align-items: center;
+                        column-gap: 5px;
+                        padding-top: 5px;
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
+                        p {
+                            font-family: var(--fontFamily);
+                            font-size: 10px;
+                            color: grey;
+                        }
+                    }
+                    .Order-Price {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 10px;
+                        width: 100%;
+                         span {
+                            background-color: #D32F2F;
+                            color: white;
+                            font-family: var(--fontFamilyNumber);
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 25px;
+                            width: 35px;
+                        }
+                        p {
+                            font-family: var(--fontFamilyNumber);
+                            font-size: 23px;
+                            color: black;
+                            font-weight: bold;
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            img {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+
+                    }
+                    .Order-Old-Price {
+                        font-size: 23px;
+                        font-family: var(--fontFamilyNumber);
+                        color: grey;
+                        text-decoration: line-through;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding-left: 15px;
+                    }
+                    .Order-time {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-end;
+                        color: #D32F2F;
+                        font-family: var(--fontFamilyNumber);
+                        padding-top: 15px;
+                    }
+                }
+              }
+          
+              .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+        }
+    }
+}
+.addmargintop {
+    margin-top: 20px;
+}
+.noleftmargin {
+    margin-left: 0px !important;
+}
+.addmargintop2 {
+    margin-top: 10px;
+}
+.noleftborder {
+    border-left: 0px none transparent !important;
+}

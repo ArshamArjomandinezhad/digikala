@@ -1,0 +1,255 @@
+.Saleoftheday {
+    width: 100%;
+    height: 345px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    .Saleoftheday-center {
+        width: 98%;
+        height: inherit;
+        border-radius: 10px;
+        background-color: #E5123D;
+        background-image: url(../Images/Sale-page/Sale-of-the-day/Background.svg);
+        padding: 1px;
+        .Saleoftheday-center-top {
+            height: 10%;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            padding-right: 15px;
+            padding-top: 15px;
+            align-items: center;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            p {
+                color: white;
+                font-family: var(--fontFamily);
+                font-weight: bold;
+                padding-right: 5px;
+            }
+        }
+        .Saleoftheday-center-bottom {
+            height: 90%;
+            width: 100%;
+            padding-top: 20px;
+            .swiper {
+                width: 100%;
+                height: 95%;
+              }
+          
+              .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                .coming-soon {
+                    width: inherit;
+                    height: inherit;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-flow: column wrap;
+                    background-color: #595959;
+                    border-radius: 15px;
+                    .lock {
+                        background-color: #E5123D;
+                        border: 1px solid  #E5123D;
+                        border-radius: 50%;
+                        height: 60px;
+                        width: 60px;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 20px;
+                            left: 21px;
+                        }
+                    }
+                    .alert {
+                        display: flex;
+                        flex-flow: row wrap;
+                    p {
+                        margin-top: 5px;
+                        font-family: var(--fontFamily);
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    span {
+                        border: 1px solid white;
+                        display: flex;
+                        flex-flow: row wrap;
+                        border-radius: 5px;
+                        padding: 5px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            padding: 2px;
+                        }
+                        p {
+                            font-family: var(--fontFamily);
+                            font-size: 13px;
+                            color: white;
+                        }
+                    }
+                }
+                }
+                .swiper-slide-saleoftheday {
+                    width: inherit;
+                    height: inherit;
+                    padding-top: 10px;
+                    padding-right: 10px;
+                    .Incredible-offer {
+                        width: 116px;
+                        height: 14px;
+                        margin-bottom: 10px;
+                    }
+                    .Saleoftheday-product {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: end;
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            width: 200px;
+                            height: 200px;
+                            margin-left: 160px;
+                        }
+                        .information {
+                            width: 270px;
+                            height: 100%;
+                            h3 {
+                                font-family: var(--fontFamily);
+                                color: black;
+                                font-size: 9px;
+                                padding-left: 5px;
+                            }
+                            .statistics {
+                                display: flex;
+                                flex-flow: row wrap;
+                                align-items: center;
+                                height: inherit;
+                                justify-content: space-between;
+                                height: 100px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                .color {
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: fit-content;
+                                .color-circle {
+                                    width: 15px;
+                                    height: 15px;
+                                    background-color: silver;
+                                    border-radius: 50%;
+                                    margin-left: 8px;
+                                }
+                                p {
+                                    font-family: var(--fontFamily);
+                                    color: black;
+                                    font-size: 10px;
+                                }
+                            }
+                            .rating {
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: center;
+                                align-items: center;
+                                img {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                                p {
+                                    font-family: var(--fontFamilyNumber);
+                                    color: black;
+                                    font: 10px;
+                                }
+                            }
+                            }
+                            .Saleoftheday-price {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                span {
+                                    margin-right: 12px;
+                                    width: 34px;
+                                    height: 20px;
+                                    color: white;
+                                    background-color: crimson;
+                                    border-radius: 25px;
+                                    font-family: var(--fontFamily);
+                                    font-size: 13px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                .price {
+                                    width: 20%;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    margin-left: 45px;
+                                p {
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-family: var(--fontFamilyNumber);
+                                    font-weight: bold;
+                                }
+                                img {
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                            }
+                            .Saleoftheday-oldprice {
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: end;
+                                p {
+                                    font-family: var(--fontFamilyNumber);
+                                    color: grey;
+                                    text-decoration: line-through;
+                                    padding-left: 25px;
+                                }
+                            }
+                            .timer {
+                                color: red;
+                                display: flex;
+                                flex-flow: row wrap;
+                                align-items: end;
+                                justify-content: end;
+                                margin-top: 35px;
+                                padding-left: 15px;
+                                font-family: var(--fontFamilyNumber);
+                            }
+                        }
+                    }
+                }
+              }
+          
+              .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+        }
+    }
+}
+.greycircle {
+    background-color: rgb(158, 158, 158) !important;
+}
+.timerfixer {
+    margin-top: 20px !important;
+}

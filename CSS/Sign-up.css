@@ -1,0 +1,95 @@
+.Sign-up-middle {
+    height: 500px;
+    width: 405px;
+    position: absolute;
+    border: 1px solid #F0F0F1;
+    top: calc(50% - 500px / 2);
+    right: calc(50% - 405px / 2);
+    border-radius: 15px;
+    .Sign-up-logo {
+        width: 100%;
+        height: 125px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100px;
+            height: 69px;
+        }
+    }
+    .Sign-up-enter {
+        width: 100%;
+        height: 40px;
+        h1 {
+            font-family: var(--fontFamily);
+            font-size: 23px;
+            padding-right: 30px;
+            padding-top: 20px;
+        }
+    }
+    .Sign-up-text {
+        width: 100%;
+        height: 26px;
+        margin-top: 40px;
+        margin-right: 30px;
+        p {
+            font-family: var(--fontFamily);
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+    }
+    .Sign-up-PhoneNumber {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        input[type="text"]{
+            border-radius: 15px;
+            width: 80%;
+            height: 45px;
+            border: 1px solid crimson;
+            padding: 20px;
+        }
+    }
+    .Sign-up-submit {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        button {
+            width: 80%;
+            height: inherit;
+            background-color: crimson;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            font-family: var(--fontFamily);
+            cursor: pointer;
+        }
+    }
+    .Sign-up-note {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        column-gap: 4px;
+        p {
+            font-family: var(--fontFamily);
+            color: black;
+            font-size: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: lightskyblue;
+            font-family: var(--fontFamily);
+            font-size: 10px;
+        }
+    }
+}

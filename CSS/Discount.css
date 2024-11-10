@@ -1,0 +1,130 @@
+.Discount {
+    width: 100%;
+    height: 846px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .Discount-center {
+        width: 85%;
+        height: inherit;
+        border: 1px solid #F0F0F1;
+        border-radius: 15px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        .Discount-center-top {
+            width: 100%;
+            height: 76px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-left: 5px;
+            }
+            h3 {
+                font-family: var(--fontFamily);
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .Discount-center-bottom {
+            width: 100%;
+            height: calc(826px - 76px);
+            .discount-row {
+            height: 33.33%;
+            display: flex;
+            .discount-item {
+                width: 218px;
+                height: 250px;
+                .discount-item-product {
+                    border-left: 1px solid #F0F0F1;
+                    border-bottom: 1px solid #F0F0F1;
+                    height: 250px;
+                    .discount-image {
+                        width: 150px;
+                        height: 150px;
+                        padding: 20px;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: calc(50% - 150px / 2);
+                        img {
+                            width: inherit;
+                            height: inherit;
+                        }
+                    }
+                    .discount-price {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-around;
+                        margin-top: 35px;
+                        padding-left: 5px;
+                        padding-bottom: 5px;
+                        span {
+                            background-color: #D32F2F;
+                            color: white;
+                            font-family: var(--fontFamilyNumber);
+                            border-radius: 20px;
+                            font-weight: bold;
+                            width: 40px;
+                            height: 25px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .discount-price-numbers-and-currency {
+                            width: 60%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: end;
+                            align-items: center;
+                        p {
+                            font-family: var(--fontFamilyNumber);
+                            font-weight: bold;
+                        }
+                        img {
+                            object-fit: cover;
+                            width: 16px;
+                            height: 16px !important;
+                        }
+                    }
+                    }
+                    .discount-old-price {
+                        width: 50px;
+                        height: 26px;
+                        margin-right: 145px;
+                        margin-bottom: 15px;
+                        padding-left: 10px;
+                        p {
+                            height: inherit;
+                            width: inherit;
+                            font-family: var(--fontFamilyNumber);
+                            font-weight: bold;
+                            color: grey;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+}
+.leftborderremove {
+    border-left: 0px none transparent !important;
+}
+.bottomborderremove {
+    border-bottom: 0px none transparent !important;
+}
+.nodiscount {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    justify-content: end !important;
+    margin-top: 35px !important;
+    padding-left: 5px !important;
+    padding-bottom: 5px !important;
+}

@@ -1,0 +1,8 @@
+.Sale-banner {
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+    background-color: #EE3E52;
+    display: flex;
+    justify-content: center;
+}

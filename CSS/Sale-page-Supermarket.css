@@ -1,0 +1,115 @@
+.Sale-page-Supermarket {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    .Sale-page-Supermarket-center {
+        width: 99%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-top: 15px;
+        border-radius: 15px;
+        background-color: #ECEFEE;
+        .Sale-page-Supermarket-Center-right {
+            width: 40%;
+            height: inherit;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            .Sale-page-Supermarket-Basket {
+                width: 66px;
+                height: 62px;
+                margin-right: 20px;
+                opacity: 1;
+            }
+            .Sale-page-Supermarket-Incredible-offer {
+                width: 250px;
+                height: 28px;
+                padding-right: 20px;
+            }
+            .Sale-page-Supermarket-Discount {
+                background-color: #029A49;
+                border-radius: 15px;
+                margin-right: 20px;
+                width: 110px;
+                height: 28px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                p {
+                    color: white;
+                    font-family: var(--fontFamily);
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .Sale-page-Supermarket-Center-left {
+            width: 60%;
+            height: inherit;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 10px;
+            padding-right: 50px;
+            background-image: url(../Images/Sale/Supermarket/background.svg);
+            padding-left: 20px;
+            .Sale-page-Supermarket-Product {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                width: 74px;
+                height: 74px;
+                background-color: white;
+                border-radius: 50%;
+                position: relative;
+                .Product-Image{
+                    margin-top: 10px;
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 50%;
+                }
+                .Sale-page-Supermarket-Product-percentage {
+                    position: relative;
+                    left: 20px;
+                    bottom: 10px;
+                    background-color: #D32F2F;
+                    color: white;
+                    font-family: var(--fontFamilyNumber);
+                    font-weight: bold;
+                    width: 34px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 25px;
+                }
+            }
+            .Sale-page-Supermarket-More {
+                width: 143px;
+                height: 50px;
+                background-color: white;
+                border-radius: 30px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                p {
+                    color: #029A6C;
+                    font-family: var(--fontFamily);
+                    font-size: 13px;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: IranYekan;
+    src: url(../Fonts/fa/IRANYekanX-Regular.ttf);
+    src: url(../Fonts/fa/IRANYekanX-Regular.eot);
+    src: url(../Fonts/fa/IRANYekanX-Regular.woff);
+    src: url(../Fonts/fa/IRANYekanX-Regular.woff2);
+}
+@font-face {
+    font-family: Bnazanin;
+    src: url(../Fonts/Bnazanin/BNazanin.ttf);
+    src: url(../Fonts/Bnazanin/BNazanin.eot);
+    src: url(../Fonts/Bnazanin/BNazanin.woff);
+    src: url(../Fonts/Bnazanin/BNazanin.woff2);
+}
+:root {
+    --fontFamily:IranYekan;
+    --fontFamilyNumber:Bnazanin;
+}
+.Container {
+    width: 100%;
+}
+.Sign-up-Container {
+    width: 100%;
+}
+.Sale-container {
+    width: 100%;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+.swiper-button-disabled {
+    opacity: 0 !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    color: black;
+}
+.swiper-pagination-bullet-active {
+    width: 20px !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    transition: 300ms;
+}
+html,body {
+    scroll-behavior: smooth !important;
+}

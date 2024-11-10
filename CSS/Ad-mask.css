@@ -1,0 +1,18 @@
+.Ad-mask {
+    width: 100%;
+    height: 167px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .Ad-mask-center {
+        width: 80%;
+        height: inherit;
+        img {
+            width: 100%;
+            height: inherit;
+            border-radius: 15px;
+        }
+    }
+}

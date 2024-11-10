@@ -1,0 +1,49 @@
+.Options {
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
+    .Options-center {
+        width: 99%;
+        height: inherit;
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .Options-items {
+                height: 166px;
+                width: 116px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column nowrap;
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
+                p {
+                    font-family: var(--fontFamily);
+                    color: black;
+                    font-size: 12px;
+                }
+            }
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    }
+}

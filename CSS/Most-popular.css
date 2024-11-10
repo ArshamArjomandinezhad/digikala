@@ -1,0 +1,116 @@
+.Most-popular {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .Most-popular-center {
+        width: 80%;
+        height: inherit;
+        padding: 10px;
+        border: 1px solid #F0F0F1;
+        border-radius: 15px;
+        .Most-popular-center-top {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            .Most-popular-title {
+                width: 90%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 5px;
+                 }
+                 p {
+                    font-family: var(--fontFamily);
+                    font-weight: bold;
+                    font-size: 25px;
+                 }
+            }
+             .Most-popular-link {
+                a {
+                    text-decoration: none;
+                    font-family: var(--fontFamily);
+                    font-size: 15px;
+                    color: #37BFD3;
+                }
+             }
+            }
+            .Most-popular-center-bottom {
+                width: 100%;
+                height: calc(400px - 80px);
+                .swiper {
+                    width: 100%;
+                    height: 93%;
+                  }
+              
+                  .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 40px;
+                    .swiper-slide-most-popular-product {
+                        width: inherit;
+                        height: inherit;
+                        display: flex;
+                        flex-flow: column wrap;
+                        .Most-popular-item {
+                            width: 100%;
+                            height: 33%;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            align-items: center;
+                            column-gap: 10px;
+                            .Most-popular-item-image {
+                                width: 86px;
+                                height: 86px;
+                                display: flex;
+                                flex-flow: row wrap;
+                            }
+                            .Most-popular-item-number {
+                                font-family: var(--fontFamilyNumber);
+                                font-size: 27px;
+                                font-weight: bolder;
+                                color: #19BFD3;
+                            }
+                            .Most-popular-item-text {
+                                width: 53%;
+                                font-family: var(--fontFamily);
+                                font-size: 11px;
+                                line-height: 20px;
+                                text-align: right;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                            }
+                        }
+                    }
+                  }
+              
+                  .swiper-slide img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+            }    
+    }
+}
+.Most-popular-item-border {
+    width: 70%;
+    height: 1px;
+    background-color: #F0F0F1;
+    margin-right:  auto;
+}

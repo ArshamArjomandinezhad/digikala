@@ -1,0 +1,58 @@
+.Stories {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    .Center-Stories {
+        width: 80%;
+        height: inherit;
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .swiper-slide-item {
+                width: inherit;
+                height: inherit;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                row-gap: 15px;
+                padding-top: 20px;
+                overflow: hidden;
+                img {
+                    width: 74px;
+                    height: 74px;
+                    border-radius: 50%;
+                    outline: 2px solid #BC4299;
+                    outline-offset: 3px;
+                }
+                h5 {
+                    font-size: 11px;
+                    font-family: var(--fontFamily);
+                    font-weight: normal;
+                    line-height: 20px;
+                    width: 70%;
+                }
+            }
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+    }
+
+}

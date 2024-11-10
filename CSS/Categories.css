@@ -1,0 +1,49 @@
+.Categories {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .Categories-center {
+        width: 80%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        .Categories-items {
+            width: 10%;
+            height: inherit;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+            img {
+                width: 52px;
+                height: 52px;
+            }
+            h5 {
+                font-family: var(--fontFamily);
+                font-weight: normal;
+                font-size: 12px;
+            }
+        }
+        .Dots {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: lightgrey;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2px;
+            cursor: pointer;
+            .Dots-Item {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: grey;
+            }
+        }
+    }
+}

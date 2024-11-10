@@ -1,0 +1,96 @@
+.Sale-Supermarket {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    .Sale-Supermarket-Center {
+        width: 80%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-top: 15px;
+        border-radius: 15px;
+        background-color: #ECEFEE;
+        .Sale-Supermarket-Center-right {
+            width: 40%;
+            height: inherit;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            .Basket {
+                width: 66px;
+                height: 62px;
+                margin-right: 20px;
+                opacity: 1;
+            }
+            .Incredible-offer {
+                width: 250px;
+                height: 28px;
+                padding-right: 20px;
+            }
+            .Discount {
+                background-color: #029A49;
+                border-radius: 15px;
+                margin-right: 20px;
+                width: 110px;
+                height: 28px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                p {
+                    color: white;
+                    font-family: var(--fontFamily);
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .Sale-Supermarket-Center-left {
+            width: 60%;
+            height: inherit;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            padding-right: 50px;
+            background-image: url(../Images/Sale/Supermarket/background.svg);
+            .Product {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                width: 74px;
+                height: 74px;
+                background-color: white;
+                border-radius: 50%;
+            .Product-Image {
+                width: 58px;
+                height: 58px;
+            }
+        }
+        .More {
+            width: 143px;
+            height: 50px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: #029A6C;
+                font-family: var(--fontFamily);
+                font-size: 13px;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
+            }
+        }
+        }
+    }
+}

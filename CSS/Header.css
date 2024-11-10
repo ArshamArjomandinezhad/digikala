@@ -1,0 +1,252 @@
+header {
+    width: 100%;
+    height: 170px;
+    box-shadow: 0 1px grey;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    .Banner {
+        width: 100%;
+        height: 60px;
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+    .Center {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        .Center-Logo {
+            width: 20%;
+            height: inherit;
+            display: flex;
+            justify-content: end;
+            padding-left: 15px;
+            img {
+                width: 200px;
+            }
+        }
+        .Center-Search {
+            width: 60%;
+            height: inherit;
+            padding-right: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            position: relative;
+            input[type="text"]{
+                width: 600px;
+                height: 40px;
+                border: none;
+                border-radius: 7px;
+                padding-right: 60px;
+                background-color: #F0F0F1;
+                &::placeholder {
+                    font-family: var(--fontFamily);
+                }
+            }
+            img {
+                position: absolute;
+                right: 40px;
+                top: 25px;
+            }
+        }
+        .Center-Register {
+            width: 20%;
+            height: inherit;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            padding-right: 20px;
+            column-gap: 15px;
+            .Center-Register-Link {
+                width: 135px;
+                height: 40px;
+                color: black;
+                border: 1px solid lightgrey;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 5px;
+                font-family: var(--fontFamily);
+                font-size: 12px;
+                font-weight: 600;
+                text-decoration: none;
+                span {
+                    width: 1.5px;
+                    height: 15px;
+                    background-color: black;
+                }
+            }
+            span {
+                width: 0.5px;
+                    height: 40px;
+                    background-color: lightgrey;
+            }
+        }
+    }
+    .Menu {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-flow: row wrap;
+        padding-right: 90px;
+        .Menu-Options-Right {
+            width: 80%;
+            height: inherit;
+            .nav {
+                width: 100%;
+                height: inherit;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                column-gap: 10px;
+                .First-nav-Item {
+                    color: black !important;
+                    font-weight: bold !important;
+                    font-size: 13px !important;
+                }
+                .hr-vertical {
+                    width: 1px;
+                    height: 15px;
+                    background-color: lightgrey;
+                }
+                .nav-Items {
+                    width: fit-content;
+                    height: inherit;
+                }
+                .nav-Items-Links {
+                    display: flex;
+                    align-items: center;
+                    width: inherit;
+                    height: inherit;
+                    padding: 0px 5px;
+                    text-decoration: none;
+                    color: #7B6684;
+                    font-family: var(--fontFamily);
+                    font-size: 12px;
+                    line-height: 40px;
+                    img {
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+        .Menu-Options-Left {
+            width: 20%;
+            height: inherit;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            column-gap: 10px;
+            padding-right: 10px;
+            label[for="location"] {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                font-family: var(--fontFamily);
+                font-size: 12px;
+                column-gap: 10px;
+                cursor: pointer;
+        }
+        .Location {
+            width: 470px;
+            height: 600px;
+            position: fixed;
+            top: calc(50% - 600px / 2);
+            left: calc(50% - 470px / 2);
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 15px;
+            display: none;
+            .Location-top {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                border-bottom: 1px solid #F0F0F1;
+                p {
+                    width: 60%;
+                    color: black;
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 10px;
+                    font-family: var(--fontFamily);
+                }
+                label[for="location-close"]{
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: black;
+                    cursor:pointer;
+                    padding: 10px;
+                }
+            }
+            .Location-bottom {
+                display: flex;
+                flex-flow: column nowrap;
+                padding: 15px;
+                overflow: scroll;
+                overflow-x: hidden;
+                width: 100%;
+                height: 90%;
+                .Automatic-Location-Finder {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    p {
+                        color: #19BFD3;
+                        font-family: var(--fontFamily);
+                        padding-right: 15px;
+                        font-weight: bold;
+                    }
+                }
+                .City {
+                    margin-top: 30px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #F0F0F1;
+                    padding-bottom: 15px;
+                    p {
+                        color: black;
+                        font-family: var(--fontFamily);
+                    }
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        #location:checked ~ .Location {
+            display: block;
+        }
+        }
+    }
+}
+.Basket {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+.removebottommargin {
+    margin-bottom: 0px !important;
+}
+.erasebottomborder {
+    border-bottom: 0px none transparent !important;
+}

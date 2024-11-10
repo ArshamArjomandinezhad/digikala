@@ -1,0 +1,140 @@
+.Incredibletomorrow {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
+    .Incredibletomorrow-center {
+        width: 99%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        background-color: #F5F2F3;
+        border-radius: 15px;
+        .Incredibletomorrow-right {
+            width: 40%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            padding-right: 40px;
+            .rightsideimgandtext {
+                row-gap: 30px;
+                p {
+                    font-family: var(--fontFamily);
+                    color: black;
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+            }
+            .Incredibletomorrow-timer {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                column-gap: 5px;
+                .Incredibletomorrow-timer-seconds {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 5px;
+                    color: black;
+                    font-family: var(--fontFamilyNumber);
+                    font-weight: bold;
+                }
+                .Incredibletomorrow-timer-minutes {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 5px;
+                    color: black;
+                    font-family: var(--fontFamilyNumber);
+                    font-weight: bold;
+                }
+                .Incredibletomorrow-timer-hours {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 5px;
+                    color: black;
+                    font-family: var(--fontFamilyNumber);
+                    font-weight: bold;
+                }
+            }
+        }
+        .Incredibletomorrow-left {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-end;
+            width: 50%;
+            column-gap: 10px;
+            .Incredibletomorrow-Product {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                width: 74px;
+                height: 74px;
+                background-color: white;
+                border-radius: 50%;
+                position: relative;
+                .Incredibletomorrow-Product-Image {
+                    margin-top: 10px;
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 50%;
+                }
+                .Incredibletomorrow-Product-percentage {
+                    position: relative;
+                    left: 20px;
+                    bottom: 10px;
+                    background-color: #D32F2F;
+                    color: white;
+                    font-family: var(--fontFamilyNumber);
+                    font-weight: bold;
+                    width: 34px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 25px;
+                }
+            }
+            .Incredibletomorrow-More {
+                width: 143px;
+                height: 50px;
+                background-color: white;
+                border-radius: 30px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                p {
+                    color: #D32F2F;
+                    font-family: var(--fontFamily);
+                    font-size: 13px;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

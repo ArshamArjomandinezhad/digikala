@@ -1,0 +1,203 @@
+.Selected-Sale {
+    width: 100%;
+    height: 445px;
+    background-color: #FF6622;
+    margin-top: 20px;
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Special-swiper-slide-item {
+            background-color: transparent;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            .tools {
+                width: 145px;
+                height: 145px;
+            }
+        }
+        .Selected-swiper-slide-item {
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 15px;
+            height: 92%;
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            img {
+                width: 116px;
+                height: 14px;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .Selected-Image {
+                margin: 20px auto;
+                width: 150px;
+                height: 150px;
+            }
+            .Selected-Description {
+                font-family: var(--fontFamily);
+                font-size: 13px;
+                color: black;
+                padding: 0px 5px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+            .Deliver-tomorrow {
+                font-family: var(--fontFamily);
+                color: lightslategrey;
+                font-size: 11px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: start;
+                align-items: center;
+                margin: 10px;
+                img {
+                    width: 18px;
+                    height: 18px;
+                    margin: 0px;
+                    margin-right: 5px;
+                    margin-left: 2px;
+                }
+            }
+            .In-Storage {
+                font-family: var(--fontFamily);
+                color: lightslategrey;
+                font-size: 11px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: start;
+                align-items: center;
+                margin: 10px;
+                img {
+                    width: 18px;
+                    height: 18px;
+                    margin: 0px;
+                    margin-right: 5px;
+                    margin-left: 2px;
+                }
+            }
+            .Selected-price-discount {
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                span {
+                    background-color: #D32F2F;
+                    border-radius: 20px;
+                    color: white;
+                    font-family: var(--fontFamilyNumber);
+                    font-weight: bold;
+                    width: 40px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    font-family: var(--fontFamilyNumber);
+                    font-size: 23px;
+                    font-weight: bold;
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+            .Selected-oldprice {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: end;
+                p {
+                    font-family: var(--fontFamilyNumber);
+                    font-size: 23px;
+                    font-weight: bold;
+                    color: grey;
+                    text-decoration: line-through;
+                    padding-left: 35px;
+                }
+            }
+            .Progess-bar {
+                width: 90%;
+                height: 5px;
+                background-color: lightgrey;
+                margin: 0 auto;
+                border-radius: 10px;
+                position: relative;
+                .Progess {
+                    width: 60%;
+                    height: inherit;
+                    border-radius: inherit;
+                    background-color: #D32F2F;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            .Selected-timer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding-left: 10px;
+                .Amount-sold {
+                    display: flex;
+                    flex-flow: row wrap;
+                    column-gap: 7px;
+                    padding-right: 10px;
+                    .Amount-sold-Percentage {
+                        color: #D32F2F;
+                        font-family: var(--fontFamilyNumber);
+                        font-size: 15px;
+                    }
+                    .Amount-sold-text {
+                        color: grey;
+                        font-family: var(--fontFamily);
+                        font-size: 15px;
+                    }
+                }
+                .Selected-timer-timer {
+                    color: crimson;
+                    font-family: var(--fontFamilyNumber);
+                }
+            }
+        }
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+.Leftposition {
+    padding-right: 135px;
+}
+.Progressbar-progress-2 {
+    width: 96% !important;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
